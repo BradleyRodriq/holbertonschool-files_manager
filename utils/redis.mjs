@@ -1,6 +1,5 @@
 import { createClient } from 'redis';
 import { promisify } from 'util';
-import { v4 as uuidv4 } from 'uuid';
 
 class RedisClient {
   constructor() {
@@ -32,6 +31,5 @@ class RedisClient {
   }
 }
 
-
-  const redisClient = new RedisClient();
+const redisClient = new RedisClient();
 export default redisClient;
