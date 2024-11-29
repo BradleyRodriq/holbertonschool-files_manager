@@ -1,4 +1,4 @@
-const { MongoClient } = require('mongodb');
+import { MongoClient, ObjectId } from 'mongodb';
 import sha1 from 'sha1';
 
 MongoClient.connect = (MongoClient.connect);
