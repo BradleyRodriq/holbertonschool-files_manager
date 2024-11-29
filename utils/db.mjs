@@ -1,5 +1,8 @@
-import { MongoClient } from 'mongodb';
 import { promisify } from 'util';
+import mongodb from 'mongodb';
+
+const { MongoClient } = mongodb;
+
 
 MongoClient.connect = promisify(MongoClient.connect);
 
