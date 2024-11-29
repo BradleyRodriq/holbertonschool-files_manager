@@ -1,8 +1,7 @@
-import { MongoClient, ObjectId } from 'mongodb';
-import { promisify } from 'util';
+const { MongoClient } = require('mongodb');
 import sha1 from 'sha1';
 
-MongoClient.connect = promisify(MongoClient.connect);
+MongoClient.connect = (MongoClient.connect);
 
 class DBClient {
   constructor() {
