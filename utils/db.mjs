@@ -3,7 +3,6 @@ import sha1 from 'sha1';
 
 const { MongoClient, ObjectId } = mongodb;
 
-
 MongoClient.connect = (MongoClient.connect);
 
 class DBClient {
