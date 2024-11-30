@@ -1,4 +1,6 @@
 import mongodb from 'mongodb';
+import sha1 from 'sha1';
+
 const { MongoClient, ObjectId } = mongodb;
 
 
