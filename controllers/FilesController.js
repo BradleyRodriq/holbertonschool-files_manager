@@ -289,9 +289,7 @@ export default class FilesController {
     } catch (error) {
       response.status(404);
       response.json({ error: 'Not found' });
-      return;
     }
 
-    response.send(fileContent);
   }
 }
