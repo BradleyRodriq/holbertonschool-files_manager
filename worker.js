@@ -6,7 +6,7 @@ import dbClient from './utils/db';
 const { writeFile, readFile } = fsPromises;
 
 const fileQueue = new Queue('fileQueue');
-fileQueue.process(async (job, done) => {  
+fileQueue.process(async (job, done) => {
   if (!job) {
     done(new Error('Missing job'));
     return;

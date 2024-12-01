@@ -285,7 +285,7 @@ export default class FilesController {
     }
 
     try {
-      fileContent = await readFile(fileLocalPath);
+      const fileContent = await readFile(fileLocalPath);
     } catch (error) {
       response.status(404);
       response.json({ error: 'Not found' });
